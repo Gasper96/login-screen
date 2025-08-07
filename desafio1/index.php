@@ -1,6 +1,6 @@
 <?php
 if(!empty($_GET['erro'])){
-    echo "Login ou senha invalido.";
+    echo "<div class='error'> Login ou senha inválidos.</div>";
 }
 ?>
 <!DOCTYPE html>
@@ -25,4 +25,5 @@ if(!empty($_GET['erro'])){
         </form>
     </div>
 </body>
+
 </html>
