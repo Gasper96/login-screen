@@ -1,17 +1,15 @@
-<?php
-echo 'BEM VINDO!';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>BEM VINDO</h1>
     <form action="logaut.php">
-        <button>SAIR</button>
+        <button type="submit">SAIR</button>
     </form>
 </body>
 </html>
