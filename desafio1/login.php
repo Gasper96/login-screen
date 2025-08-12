@@ -4,17 +4,20 @@ $loginCadastrado = "gabriel";
 $senhaCadastrada = "123456";
 
 
-if (!empty($_POST['login']) && !empty($_POST['password'])){
-   if(($_POST['login'] == $loginCadastrado) && $_POST['password'] == $senhaCadastrada){
-    $_SESSION['login'] = $loginCadastrado;
-    $_SESSION['senha'] = $senhaCadastrada;
+if ((!empty($_POST['login'])) && (!empty($_POST['password']))){
+   $senharecebida = htmlspecialchars($_POST['password']);
+   $loginrecebido = htmlspecialchars($_POST['login']);
+
+   if(($loginrecebido == $loginCadastrado) && ($senharecebida == $senhaCadastrada)){
+    $_SESSION['login'] = $loginrecebido;
+    $_SESSION['senha'] = $senharecebida;
     setcookie('tema',$_POST['tema']);
     header('location: welcome.php');
-    exit;
+    exit();
    }
    else{
     header('location: index.php?erro=1');
-    exit;
+    exit();
    }
 
 };

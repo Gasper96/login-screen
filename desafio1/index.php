@@ -18,7 +18,7 @@ if(!empty($_GET['erro'])){
         </br>
             <input name="password" type="password" placeholder="Digite sua senha"/></br>
             <select name="tema">
-                <option value="escuro">Escuro</option>
+                <option value="escuro">escuro</option>
                 <option value="claro">claro</option>
             </select>
             <button>Enviar</button>
